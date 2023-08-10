@@ -9,7 +9,7 @@ const getMovies = async (url) => {
     const data = await response.json()
     showMovies(data)
 }
-getMovies(APIURL);
+getMovies(APIURL); 
 
 
 const showMovies = (data) => {
@@ -17,7 +17,7 @@ const showMovies = (data) => {
     data.results.forEach(
         (result) => {
             const imagePath = result.poster_path === null ? "img/image-missing.png" : IMGPATH + result.poster_path;
-            // const box = `
+            // const 
             // <div class="box">
             //     <img src="${IMGPATH+result}" alt="" />
             //     <div class="overlay">
